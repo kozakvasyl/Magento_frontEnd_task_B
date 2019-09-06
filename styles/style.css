@@ -1,3 +1,5 @@
+/* RESET browser styles */
+
 *,
 *:before,
 *:after {
@@ -7,3 +9,39 @@
     margin: 0;
     padding: 0;
 }
+
+
+/* General styles */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0 24px;
+}
+
+
+/* HEADER */
+
+header,
+article {
+    border-bottom: 1px solid #b5babc;
+}
+
+
+/* ASIDE */
+
+aside {
+    display: inline-block;
+    width: 16%;
+}
+
+
+/* MAIN */
+
+main {
+    display: inline-block;
+    width: 83%;
+    border-left: 1px solid #b5babc;
+}
+
+
+/* main-title-block */
