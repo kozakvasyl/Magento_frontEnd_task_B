@@ -125,6 +125,7 @@ aside {
 .aside-nav ul li a {
     font-size: 18px;
     text-decoration: none;
+    color: #5a5e60;
 }
 
 .aside-nav ul li a::after {
@@ -140,11 +141,19 @@ aside {
 
 .recherche {
     color: #8d8d8d;
+    background-color: #e5e5e5;
+    font-size: 18px;
+    border: 0 none;
 }
 
-.recherche::before {
+.aside-nav ul li:first-child::before {
     content: url(../img/baseline-search-24px.png);
     margin-right: 16px;
+}
+
+.aside-nav ul li:first-child::after {
+    content: url(../img/ic_arrow_left.png);
+    float: right;
 }
 
 
