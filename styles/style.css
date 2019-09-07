@@ -115,6 +115,7 @@ aside {
 .car-image {
     width: 100%;
     height: auto;
+    padding-bottom: 24px;
 }
 
 .aside-nav ul li {
@@ -157,3 +158,34 @@ main {
 
 
 /* main-title-block */
+
+.main-title-block {
+    padding: 16px 0px 32px 24px;
+}
+
+.breadcrumbs a,
+p {
+    color: #8d8d8d;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.breadcrumbs a::after {
+    content: url(../img/arrow_link.png);
+    padding-left: 4px;
+}
+
+.main-title-block h1 {
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+.main-title-block p {
+    color: #5a5e60;
+    line-height: 1.2;
+}
+
+.breadcrumbs p {
+    color: #8d8d8d;
+}
