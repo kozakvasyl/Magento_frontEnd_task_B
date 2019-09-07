@@ -53,28 +53,26 @@ header img {
     text-decoration: none;
 }
 
-.hedaer-img {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 24px;
-    width: 24px;
+.meniu-icon::before {
+    text-align: center;
+    display: block;
     margin: 0 auto;
 }
 
-.icon-mic {
-    background-image: url(../img/baseline-headset_mic-24px.png);
+.icon-mic::before {
+    content: url(../img/baseline-headset_mic-24px.png);
 }
 
-.icon-place {
-    background-image: url(../img/baseline-place-24px.png);
+.icon-place::before {
+    content: url(../img/baseline-place-24px.png);
 }
 
-.icon-person {
-    background-image: url(../img/baseline-person-24px.png);
+.icon-person::before {
+    content: url(../img/baseline-person-24px.png);
 }
 
-.icon-cart {
-    background-image: url(../img/baseline-shopping_cart-24px.png);
+.icon-cart::before {
+    content: url(../img/baseline-shopping_cart-24px.png);
 }
 
 
