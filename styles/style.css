@@ -117,6 +117,35 @@ aside {
     height: auto;
 }
 
+.aside-nav ul li {
+    padding: 10px 0px;
+}
+
+.aside-nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.aside-nav ul li a::after {
+    content: url(../img/ic_arrow_left.png);
+    float: right;
+}
+
+.aside-nav ul li:first-child {
+    background-color: #e5e5e5;
+    margin: 0 -24px;
+    padding: 10px 24px;
+}
+
+.recherche {
+    color: #8d8d8d;
+}
+
+.recherche::before {
+    content: url(../img/baseline-search-24px.png);
+    margin-right: 16px;
+}
+
 
 /* MAIN */
 
