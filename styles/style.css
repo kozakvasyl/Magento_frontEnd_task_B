@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #5a5e60;
 }
 
 
@@ -15,7 +16,10 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
-    padding: 0 24px;
+}
+
+li {
+    list-style: none;
 }
 
 
@@ -24,6 +28,53 @@ body {
 header,
 article {
     border-bottom: 1px solid #b5babc;
+}
+
+header {
+    padding: 10px 24px;
+}
+
+header img {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.header-nav {
+    display: inline-block;
+    float: right;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+}
+
+.hedaer-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 24px;
+    margin: 0 auto;
+}
+
+.icon-mic {
+    background-image: url(../img/baseline-headset_mic-24px.png);
+}
+
+.icon-place {
+    background-image: url(../img/baseline-place-24px.png);
+}
+
+.icon-person {
+    background-image: url(../img/baseline-person-24px.png);
+}
+
+.icon-cart {
+    background-image: url(../img/baseline-shopping_cart-24px.png);
 }
 
 
