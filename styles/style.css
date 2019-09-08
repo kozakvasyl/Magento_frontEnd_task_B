@@ -202,11 +202,19 @@ p {
 
 /* article-top */
 
-.article-top {
+.article-top,
+.article-bottom {
     position: relative;
+    height: 249px;
 }
 
 .article-top img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+.article-bottom img {
     position: absolute;
 }
 
