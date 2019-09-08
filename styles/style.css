@@ -169,7 +169,7 @@ main {
 /* main-title-block */
 
 .main-title-block {
-    padding: 16px 0px 32px 24px;
+    padding: 16px 24px 32px 24px;
 }
 
 .breadcrumbs a,
@@ -197,4 +197,114 @@ p {
 
 .breadcrumbs p {
     color: #8d8d8d;
+}
+
+
+/* article-top */
+
+.article-top {
+    position: relative;
+}
+
+.article-top img {
+    position: absolute;
+}
+
+.wraper {
+    position: absolute;
+    left: 20%;
+    padding: 27px 24px 0px 0px;
+    width: 80%;
+}
+
+.article-content {
+    display: inline-block;
+    float: left;
+}
+
+.price-content {
+    display: inline-block;
+    float: right;
+}
+
+
+/* article-content */
+
+.article-title {
+    padding-bottom: 17px;
+}
+
+.article-descripttion {
+    background-color: #d8b12b;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.text {
+    padding: 5px 0px;
+}
+
+.text a {
+    color: #79ac3d;
+    margin-left: 10px;
+}
+
+.text a::after {
+    content: url(../img/arrow_down.png);
+    margin-left: 5px;
+}
+
+
+/* price-content */
+
+.price {
+    text-align: right;
+    margin-bottom: 11px;
+}
+
+.price h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.price h3 {
+    font-weight: unset;
+}
+
+.price h2,
+h3 {
+    display: inline-block;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    background-color: #7aac3f;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.description::before {
+    content: "";
+    display: inline-block;
+    background-color: #7aac3f;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
