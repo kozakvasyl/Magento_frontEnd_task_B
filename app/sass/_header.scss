@@ -1,8 +1,26 @@
 @import 'varibles';
 
 .header {
-    background-color: #98703b;
-    /* .wrapper {
-        
-    } */
+    color: #fff;
+    .wrapper {
+        .header-top {
+            padding-top: 42px;
+            vertical-align: middle;
+            & > * {
+                display: inline-block;
+            }
+            .logo {
+                float: left;
+                span {
+                    border: 5px solid #ffffff;
+                    display: block;
+                    font-weight: 900;
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 24px;
+                    padding: 10px 21px;
+                }
+            }
+        }
+    }
 }

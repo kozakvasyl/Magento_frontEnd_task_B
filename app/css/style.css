@@ -1,13 +1,30 @@
 .header {
-  background-color: #98703b;
-  /* .wrapper {
-        
-    } */ }
+  color: #fff; }
+  .header .wrapper .header-top {
+    padding-top: 42px;
+    vertical-align: middle; }
+    .header .wrapper .header-top > * {
+      display: inline-block; }
+    .header .wrapper .header-top .logo {
+      float: left; }
+      .header .wrapper .header-top .logo span {
+        border: 5px solid #ffffff;
+        display: block;
+        font-weight: 900;
+        font-size: 24px;
+        text-align: center;
+        line-height: 24px;
+        padding: 10px 21px; }
+
+.nav {
+  position: relative;
+  float: right;
+  padding: 24px 0; }
 
 nav {
+  position: relative;
   float: right;
-  margin-top: 38px;
-  padding-right: 130px;
+  margin: 0 11px 0 0;
   -webkit-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; }
@@ -20,22 +37,24 @@ nav {
         -ms-transform: translateX(-20px);
             transform: translateX(-20px); }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    padding: 4px 0 0 0;
+    margin: 0; }
     nav ul li {
       display: inline; }
   nav a {
     margin: 0 2px;
-    color: #000;
-    font: bold 14px/30px "Montserrat", sans-serif;
+    font: bold 18px "Open Sans", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 5px 0;
+    color: #fff;
     -webkit-perspective: 1000px;
             perspective: 1000px; }
     nav a span {
       position: relative;
       display: inline-block;
-      padding: 2px 14px;
+      padding: 2px 5px;
       -webkit-transition: -webkit-transform 0.3s;
       transition: -webkit-transform 0.3s;
       -o-transition: transform 0.3s;
@@ -68,15 +87,14 @@ nav {
       -webkit-transform: rotateX(90deg) translateY(-22px);
               transform: rotateX(90deg) translateY(-22px); }
       nav a:hover span::before, nav a:focus span::before {
-        border: 3px solid #000; }
+        border: 3px solid #fff; }
 
 .bt-nav {
   display: block;
   position: absolute;
-  right: 114px;
-  margin-top: 53px;
-  width: 36px;
-  height: 36px;
+  right: 0;
+  width: 24px;
+  height: 24px;
   cursor: pointer; }
   .open .bt-nav .line1 {
     top: 17px; }
@@ -98,10 +116,10 @@ nav {
     position: absolute;
     top: 7px;
     left: 50%;
-    width: 30px;
-    margin-left: -15px;
-    height: 3px;
-    background: #000;
+    width: 24px;
+    margin-left: -12px;
+    height: 2px;
+    background: #fff;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease; }
@@ -111,11 +129,11 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  background-color: #dbd8d8de; }
   body .wrapper {
     max-width: 70%;
     margin: 0 auto;
-    position: relative;
-    background-color: #b1aeae; }
+    background-color: #dbd8d8; }
 
 /*# sourceMappingURL=maps/style.css.map */
