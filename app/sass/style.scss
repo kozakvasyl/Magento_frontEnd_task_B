@@ -2,17 +2,22 @@
 @import 'nav';
 @import 'varibles';
 
+html, body {
+    height: 100%;
+  }
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: $OpenSans;
-    background-color: #dbd8d8de;
-        .wrapper {
+    .wrapper {
         max-width: 70%;
         margin: 0 auto;
-        background-color: #dbd8d8;
+        /* background-color: #dbd8d821; */
+    }
+    a {
+        text-decoration: none;
     }
 }
 

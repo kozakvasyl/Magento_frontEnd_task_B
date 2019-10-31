@@ -2,15 +2,24 @@
 
 .header {
     color: #fff;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("/app/img/header_bg.jpg");
+    background-size: cover;
+    .header-image {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
     .wrapper {
         .header-top {
             padding-top: 42px;
-            vertical-align: middle;
+            margin-bottom: 132px;
             & > * {
                 display: inline-block;
             }
             .logo {
-                float: left;
                 span {
                     border: 5px solid #ffffff;
                     display: block;
@@ -20,6 +29,32 @@
                     line-height: 24px;
                     padding: 10px 21px;
                 }
+            }
+        }
+        .header-title-block {
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+                font-size: 70px;
+                line-height: 70px;
+                margin: 0 0 17px 0;
+                span {
+                    color: $green;
+                }
+            }
+            p {
+                width: 610px;
+                margin: 0 auto;
+                font-size: 18px;
+                margin-bottom: 60px;
+            }
+            .button-primery {
+                background-color: #00b88b;
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 23px 46px;
+                font-weight: 100;
             }
         }
     }
