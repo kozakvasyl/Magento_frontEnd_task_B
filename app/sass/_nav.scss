@@ -1,7 +1,7 @@
 .nav {
     position: relative;
     float: right;
-    padding: 24px 0;
+    padding: 22px 0;
 }
 nav{
     position: relative;
@@ -58,7 +58,6 @@ nav{
                 transform-origin: 50% 0;
             }
         }
-        
         &:hover,
         &:focus{
             span{
@@ -100,6 +99,9 @@ nav{
         .line3{
             transform: rotateZ(-45deg);
         }
+        nav ul {
+            background-color: $green;
+        }
     }
     .line{
         position: absolute;
@@ -110,6 +112,40 @@ nav{
         height: 2px;
         background: #fff;
         transition: all 0.2s ease;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .nav {
+        padding: 14px 0;
+        nav ul li {
+            display: none;
+        }
+    }
+    .close {
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 96%;
+        background-color: $green;
+        z-index: 1;
+        nav {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 115px;
+            text-align: center;
+            ul li {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        .bt-nav {
+            right: 15px;
+            top: 30px;
+        }
     }
 }
 
