@@ -5,17 +5,17 @@
     overflow: hidden;
     width: 100%;
     min-height: 100%;
-    background-image: url("/app/img/header_bg.jpg");
+    background-image: url("img/header_bg.jpg");
     background-size: cover;
     .header-image {
         width: 100%;
         position: absolute;
         z-index: -1;
+        height: 100%;
     }
     .wrapper {
         .header-top {
             padding-top: 42px;
-            margin-bottom: 132px;
             & > * {
                 display: inline-block;
             }
@@ -32,7 +32,12 @@
             }
         }
         .header-title-block {
+            position: absolute;
             text-align: center;
+            left: 0;
+            right: 0;
+            bottom: 50%;
+            margin-bottom: -130px;
             h1 {
                 text-transform: uppercase;
                 font-size: 70px;
