@@ -6,23 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test_3</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fullpage.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <script src="js/snap.svg-min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <img class="header-image" src="img/header_bg.jpg" alt="header_bg.jpg">
-       <div class="wrapper">
-           <div class="header-top">
-               <a class="logo" href="#">
-                   <span>TE<br>ST</span>
-               </a>
-               <div class="nav">
+    <div id="fullpage">
+        <header class="header section" data-anchor="block1">
+            <img class="header-image" src="img/header_bg.jpg" alt="header_bg.jpg">
+        <div class="wrapper">
+            <div class="nav">
                     <nav>
                         <ul>
-                            <li><a href="#"><span data-hover="about">about</span></a></li>
-                            <li><a href="#"><span data-hover="works">works</span></a></li>
-                            <li><a href="#"><span data-hover="contact">contact</span></a></li>
+                            <li data-menuanchor="block2"><a href="#block2"><span data-hover="about">about</span></a></li>
+                            <li data-menuanchor="block3"><a href="#block3"><span data-hover="works">works</span></a></li>
+                            <li data-menuanchor="block4"><a href="#block4"><span data-hover="contact">contact</span></a></li>
                         </ul>
                     </nav>
                     <div class="bt-nav">
@@ -30,27 +28,78 @@
                         <div class="line line2"></div>
                         <div class="line line3"></div>
                     </div>
-              </div>
-           </div>
-           <div class="header-title-block">
-               <h1>yOUR NAME IS A<br> <span>creative agency</span></h1>
-                <p>This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-                <button class="button button--fill button--effect-1">
-                    <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,9-136,9c-78.2,0-137-9-137-9S3,97.198,3,62.5C3,33.999,13,12,13,12S72,2,150,2c85,0,136,10,136,10s11,17.598,11,52C297,96.398,286,113,286,113z">
-                        <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
-                            <path d="M286,113C286,113,217.2,113,150,113C71.8,113,13,113,13,113C13,113,13,97.19800000000001,13,62.5C13,33.999,13,12,13,12C13,12,72,12,150,12C235,12,286,12,286,12C286,12,286,29.598,286,64C286,96.398,286,113,286,113C286,113,286,113,286,113"></path>
-                        <desc>Created with Snap</desc><defs></defs></svg>
-                    </span>
-                    <span class="button__text">Learn More</span>
-                </button>
-           </div>
-       </div>
-    </header>
-    <footer class="footer">
-        
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/button_elastick.js"></script>
+            </div>
+            <div class="header-top">
+                <a class="logo" href="#"><span>TE<br>ST</span></a>
+            </div>
+            <div class="header-title-block">
+                <h1>yOUR NAME IS A<br> <span>creative agency</span></h1>
+                    <p>This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                    <button class="button button--fill button--effect-1">
+                        <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,9-136,9c-78.2,0-137-9-137-9S3,97.198,3,62.5C3,33.999,13,12,13,12S72,2,150,2c85,0,136,10,136,10s11,17.598,11,52C297,96.398,286,113,286,113z">
+                            <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                <path d="M286,113C286,113,217.2,113,150,113C71.8,113,13,113,13,113C13,113,13,97.19800000000001,13,62.5C13,33.999,13,12,13,12C13,12,72,12,150,12C235,12,286,12,286,12C286,12,286,29.598,286,64C286,96.398,286,113,286,113C286,113,286,113,286,113"></path>
+                            <desc>Created with Snap</desc><defs></defs></svg>
+                        </span>
+                        <span class="button__text">Learn More</span>
+                    </button>
+            </div>
+        </div>
+        </header>
+
+        <section class="about section" data-anchor="block2">
+            <div class="wrapper">
+                <h2>ABOUT US</h2>
+                <p>Our services offering ranges from UX design to e-commerce setups. Just check out all of the service lists below to get a general idea of what we are capable of delivering. And make sure to see our portfolio for proof of our awesomeness.</p>
+                <div class="slider-about">
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="img/item1.jpg" alt="#">
+                        </div>
+                        <h3>LOREM IPSUM</h3>
+                        <p>Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
+                    </div>
+                    <div class="item">
+                        <div class="img-container">
+                                <img src="img/item2.jpg" alt="#">
+                            </div>
+                            <h3>Dolor sit amet</h3>
+                            <p>Shah Rukh Khan's acting career has spanned over two decades. Khan made his screen debut with the Doordarshan television series Fauji (1988), which led to roles in other television shows and offers to act in film. </p>
+                    </div>
+                    <div class="item">
+                        <div class="img-container">
+                                <img src="img/item3.jpg" alt="#">
+                            </div>
+                            <h3>Some heading</h3>
+                            <p>A report strongly criticizing the use of torture by the United States Central Intelligence Agency is released by the Senate Intelligence Committee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work section" data-anchor="block3">
+            <div class="wrapper">
+                <h2>OUR WORK</h2>
+                <ul>
+                    <li>BRANDING</li>
+                    <li>WEB</li>
+                    <li>GRAPHIC</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <footer class="contact section" data-anchor="block4">
+            <div class="wrapper">
+                <h2>CONTACT</h2>
+            </div>
+        </footer>
+    </div>
+    <!--  ------------scripts------------- -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage_script.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/button_elastick.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 </body>
 </html>
