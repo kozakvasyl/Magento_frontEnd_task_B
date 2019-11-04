@@ -1,6 +1,7 @@
 @import 'header';
 @import 'nav';
 @import 'varibles';
+@import 'about';
 
 html, body {
     height: 100%;
@@ -11,6 +12,9 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: $OpenSans;
+    & > * {
+        margin-bottom: 78px;
+    }
     .wrapper {
         max-width: 70%;
         margin: 0 auto;
@@ -20,7 +24,80 @@ body {
     a {
         text-decoration: none;
     }
+    h1, h2, h3 {
+        margin: 0;
+    }
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+        text-align: center;
+        &::after {
+            content: "";
+            border-bottom: 2px solid #333333;
+            width: 80px;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 23px;
+        }
+    }
 }
+
+//buttom styles-------------------------------------
+.button {
+    background: none;
+    border: none;
+    width: 220px;
+    height: 75px;
+    outline: none;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .morph-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        svg {
+            fill: #00b88b;
+        }
+    }
+}
+.button__text {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.button--anim-1 .button__text {
+    -webkit-transition: -webkit-transform 0.15s;
+    transition: transform 0.15s;
+}
+
+.button--anim-1:active .button__text {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+}
+//--------------------------------------------------
 
 @media screen and (max-width: 900px) {
     .header {
