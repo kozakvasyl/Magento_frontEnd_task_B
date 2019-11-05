@@ -2,6 +2,7 @@
 @import 'nav';
 @import 'varibles';
 @import 'about';
+@import 'slick';
 
 html, body {
     height: 100%;
@@ -100,7 +101,7 @@ body {
 //--------------------------------------------------
 
 @media screen and (max-width: 900px) {
-    .header {
+    .header, .about {
         .wrapper {
             max-width: 100%;
             padding: 42px 35px;
@@ -109,7 +110,7 @@ body {
 }
 
 @media screen and (max-width: 520px) {
-    .header {
+    .header, .about {
         .wrapper {
             padding: 15px;
         }
