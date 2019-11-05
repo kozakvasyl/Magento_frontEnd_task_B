@@ -35,3 +35,21 @@ $(document).ready(function(){
     ]
   });
 });
+
+//isotope-------------------------------
+$('.work-items').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+$('.work-meniu li').click(function() {
+  $('.work-meniu li').removeClass('active');
+  $(this).addClass('active');
+
+  var selector = $(this).attr('data-filter');
+  $('.work-items').isotope({
+    filter: selector
+  });
+  return false;
+});
+
