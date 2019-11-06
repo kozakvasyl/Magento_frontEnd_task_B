@@ -38,7 +38,6 @@ $(document).ready(function(){
 
 //isotope-------------------------------
 $('.work-items').isotope({
-  // options
   itemSelector: '.item',
   layoutMode: 'fitRows'
 });
