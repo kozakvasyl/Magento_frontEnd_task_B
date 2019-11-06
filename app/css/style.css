@@ -286,6 +286,24 @@ nav {
     width: 280px;
     margin: 0 auto; } }
 
+.work .work-meniu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px; }
+  .work .work-meniu li {
+    display: inline-block;
+    margin-right: 45px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    color: #dadada; }
+  .work .work-meniu .active {
+    font-weight: 400;
+    color: #062033; }
+
+.work .work-items .item {
+  text-align: center; }
+
 html, body {
   height: 100%; }
 

@@ -1,0 +1,24 @@
+.work {
+    .work-meniu {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+            display: inline-block;
+            margin-right: 45px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 100;
+            color: #dadada;
+        }
+        .active {
+            font-weight: 400;
+            color: #062033;
+        }
+    }
+    .work-items {
+        .item {
+            text-align: center;
+        }
+    }
+}
