@@ -79,45 +79,47 @@
         <div class="wrapper">
             <h2>OUR WORK</h2>
             <ul class="work-meniu">
-                <li class="active" data-filter=".brand">BRANDING</li>
+                <li class="active" data-filter=".branding">BRANDING</li>
                 <li data-filter=".web">WEB</li>
-                <li data-filter=".graph">GRAPHIC</li>
+                <li data-filter=".graphic">GRAPHIC</li>
             </ul>
-            <div class="work-items">
-                <div class="item brand web">
-                    <div class="img-container">
+            <div class="grid">
+                <div class="grid-item branding web">
+                    <a href="" class="img-container">
                         <img src="img/pic1.jpg" alt="">
-                    </div>
+                    </a>
                     <h3>ANIMUP</h3>
-                    <div class="description">bla/bla</div>
+                    <div class="description"></div>
                 </div>
-                <div class="item brand">
-                    <div class="img-container">
+                <div class="grid-item branding">
+                    <a href="" class="img-container">
                         <img src="img/pic2.jpg" alt="">
-                    </div>
+                    </a>
                     <h3>AXEL</h3>
-                    <div class="description">bla/bla</div>
+                    <div class="description"></div>
                 </div>
-                <div class="item brand web">
-                    <div class="img-container">
+                <div class="grid-item branding web">
+                    <a href="" class="img-container">
                         <img src="img/pic3.jpg" alt="">
-                    </div>
+                    </a>
                     <h3>ANIMUP</h3>
-                    <div class="description">bla/bla</div>
+                    <div class="description"></div>
                 </div>
-                <div class="item brand graph">
-                    <div class="img-container">
+                <div class="grid-item branding graphic">
+                    <a href="" class="img-container">
                         <img src="img/pic4.jpg" alt="">
-                    </div>
+                    </a>
                     <h3>AXEL</h3>
-                    <div class="description">bla/bla</div>
+                    <div class="description"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="contact">
-        <div class="map"></div>
+        <div id="map">
+            
+        </div>
         <div class="wrapper">
             <h2>CONTACT</h2>
             <h3>Leave us a note</h3>
@@ -146,18 +148,20 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-item">
-            <a href="#" class="adres">123 Main Street city, AB 0123 345 Not Main city, CD456</a>
-        </div>
-        <div class="footer-item">
-            <a href="" class="mail">mymail@example.com heremail@sample.com</a>
-        </div>
-        <div class="footer-item">
-            <a href="" class="phone">012-345-5789 025-693-9658</a>
-        </div>
-        <div class="footer-item">
-            <spaan class="copyright">Itembridge,2019.</spaan>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-item">
+                <a href="#" class="adres">123 Main Street city, AB 0123 345 Not Main city, CD456</a>
+            </div>
+            <div class="footer-item">
+                <a href="" class="mail">mymail@example.com heremail@sample.com</a>
+            </div>
+            <div class="footer-item">
+                <a href="" class="phone">012-345-5789 025-693-9658</a>
+            </div>
+            <div class="footer-item">
+                <spaan class="copyright">Itembridge,2019.</spaan>
+            </div>
         </div>
     </footer>
 
@@ -166,6 +170,8 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/button_elastick.js"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxPvLTngxdYviHe2UAgibKx2qFTL_bqp0&callback=initMap"
+    async defer></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

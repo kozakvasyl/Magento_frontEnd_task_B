@@ -10,25 +10,53 @@
             font-size: 14px;
             font-weight: 100;
             color: #dadada;
+            &:last-child {
+                margin-right: 0;
+            }
         }
         .active {
             font-weight: 400;
             color: #062033;
         }
     }
-    .work-items {
-        .item {
+    .grid {
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-item {
             float: left;
             margin-bottom: 30px;
-            &:nth-child(odd), .brand, .web, .graph {
-                padding-right: 55px;
-              }
+            box-sizing: border-box;
             .img-container {
+                display: block;
                 position: relative;
                 width: 460px;
                 height: 260px;
                 overflow: hidden;
                 margin-bottom: 30px;
+                &::before {
+                    content: url('../img/cursor.png');
+                    position: absolute;
+                    z-index: 1;
+                    left: 50%;
+                    margin-left: -40px;
+                    top: 50%;
+                    margin-top: -40px;
+                    transition: all 1s ease;
+                    transform: translateX(273px);
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #000000be;
+                    transition: all 1s ease;
+                    transform: translateX(460px);
+                }
                 img {
                     position: absolute;
                     top: 50%;
@@ -37,6 +65,14 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+                &:hover {
+                    &::before {
+                        transform: translateX(0px);
+                    }
+                    &::after {
+                        transform: translateX(0px);
+                    }
                 }
             }
             h3 {
@@ -48,9 +84,27 @@
                 text-align: center;
                 font-size: 15px;
                 font-family: 'Times New Roman', Times, serif;
-                color: #060606;
+                color: #333333;
                 font-style: italic;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .work .grid .grid-item .img-container {
+        width: 340px;
+        height: 195px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .work {
+        .work-meniu {
+            text-align: center;
+        }
+        .grid .grid-item .img-container {
+            width: 290px;
+            height: 160px;
         }
     }
 }

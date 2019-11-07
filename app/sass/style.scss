@@ -4,6 +4,7 @@
 @import 'about';
 @import 'slick';
 @import 'work';
+@import 'contact';
 
 html, body {
     height: 100%;
@@ -18,7 +19,7 @@ body {
         margin-bottom: 78px;
     }
     .wrapper {
-        max-width: 70%;
+        max-width: 940px;
         margin: 0 auto;
         padding: 42px 0;
         position: relative;
@@ -101,8 +102,8 @@ body {
 }
 //--------------------------------------------------
 
-@media screen and (max-width: 900px) {
-    .header, .about {
+@media screen and (max-width: 980px) {
+    .header, .about, .work, .contact, .footer {
         .wrapper {
             max-width: 100%;
             padding: 42px 35px;
@@ -111,7 +112,7 @@ body {
 }
 
 @media screen and (max-width: 520px) {
-    .header, .about {
+    .header, .about, .work, .contact, .footer {
         .wrapper {
             padding: 15px;
         }
