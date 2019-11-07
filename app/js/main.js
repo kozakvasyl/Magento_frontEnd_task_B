@@ -77,7 +77,7 @@ function initMap() {
   var opt = {
     center: {lat: 51.765658, lng: 25.504076},
     zoom: 14,
-    mapTypeId: 'satellite'
+    mapTypeId: google.maps.MapTypeId.HYBRID
   };
   map = new google.maps.Map(document.getElementById('map'), opt);
 }

@@ -404,6 +404,48 @@ nav {
       height: 100%;
       background-color: #000000be;
       z-index: 1; }
+  .contact .wrapper {
+    z-index: 2 !important; }
+    .contact .wrapper h2 {
+      margin-bottom: 175px; }
+    .contact .wrapper h3 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 35px; }
+    .contact .wrapper form {
+      max-width: 620px;
+      margin: 0 auto; }
+      .contact .wrapper form > * {
+        padding: 20px 25px;
+        background-color: #3c3c41c4;
+        border: unset;
+        color: white;
+        font-size: 15px;
+        font-style: italic; }
+        .contact .wrapper form > *:first-child {
+          margin-right: 20px; }
+      .contact .wrapper form .name, .contact .wrapper form .mail {
+        display: inline-block;
+        width: 39%;
+        margin-bottom: 20px; }
+      .contact .wrapper form .message {
+        display: block;
+        width: 98%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 20px 0 95px 20px;
+        margin-bottom: 40px; }
+      .contact .wrapper form .button {
+        background-color: unset;
+        font-style: unset;
+        margin: 0 auto 60px;
+        display: block; }
+        .contact .wrapper form .button .morph-shape svg {
+          fill: #6633ff; }
+    .contact .wrapper .social {
+      text-align: center; }
 
 html, body {
   height: 100%; }
