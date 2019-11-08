@@ -10,11 +10,6 @@ $('.bt-nav').click( function() {
     });
 });
 //scroll-------------------------------
-/* $(document).ready(function() {
-  $('#work').click(function(){
-    $('html, body').animate({scrollTop:$('.work').position().top - 10}, 2000);
-  });
-}); */
 
 $(function(){
 
