@@ -71,13 +71,12 @@ $('.work-meniu li').click(function() {
   return false;
 });
 
-var description = $('.description');
 $('.grid-item').each(function() {
   var classNames = $(this).attr('class').split(' ');
   classNames.shift();
-  console.log(classNames.join('/'));
-  
-  description.text(classNames.join('/'));
+  classNames = classNames.join('/');
+
+  $(this).find('.description').text(classNames);
 });
 
 //GOOGLE MAP----------------------------------------
