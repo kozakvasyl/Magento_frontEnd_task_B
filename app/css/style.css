@@ -545,9 +545,6 @@ nav {
       padding-top: 9px; } }
 
 @media screen and (max-width: 680px) {
-  /* .contact {
-        margin-bottom: 89px;
-    } */
   .footer .wrapper .footer-contacts {
     margin-bottom: 5px;
     padding-left: 35px; }
@@ -571,20 +568,6 @@ nav {
     .footer .wrapper .footer-copyright::before {
       margin: 0; } }
 
-/* @media screen and (max-width: 320px) {
-    .footer {
-        .wrapper {
-            .footer-copyright {
-                text-align: unset;
-                font-size: 12px;
-                padding-left: 71px;
-                &::before {
-                    margin: 0;
-                }
-            }
-        }
-    }
-} */
 html, body {
   height: 100%; }
 
