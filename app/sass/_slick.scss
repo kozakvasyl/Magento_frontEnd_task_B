@@ -2,7 +2,7 @@
     overflow: hidden;
     .slick-list.draggable {
         .slick-track {
-            margin-bottom: 47px;
+            margin-bottom: 42px;
             .slick-slide.slick-current.slick-active {
                 &:focus {
                     outline: none;
@@ -17,22 +17,23 @@
             list-style: none;
             display: inline-block;
             margin: 0 16px;
+            list-style: none;
+            display: inline-block;
+            margin: 0 16px;
+            width: 6px;
+            height: 6px;
+            border: 1px solid #06203352;
+            border-radius: 50%;
+            background-color: #fff;
             button {
-                width: 8px;
-                height: 14px;
-                border: 1px solid #06203352;
-                border-radius: 50%;
-                background-color: #fff;
-                font-size: 0;
+                opacity: 0;
                 &:focus {
                     outline: none;
                 }
             }
         }
         .slick-active {
-            button {
-                background-color: #062033;
-            }
+            background-color: #062033;
         }
     }
 }

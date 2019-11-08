@@ -1,17 +1,18 @@
 .contact {
     position: relative;
+    margin-bottom: 66px;
     #map {
         position: absolute;
         width: 100%;
         height: 616px;
-        top: 170px;
+        top: 183px;
         &::before {
             content: '';
             display: block;
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: #000000be;
+            background-color: #000000d6;
             z-index: 1;
         }
     }
@@ -24,40 +25,42 @@
             text-align: center;
             color: #ffffff;
             font-size: 30px;
-            font-weight: 400;
-            margin-bottom: 35px;
+            font-weight: 100;
+            margin-bottom: 28px;
         }
         form {
             max-width: 620px;
-            margin: 0 auto;
+            margin: 0 auto 53px;
             & > * {
-                padding: 20px 25px;
+                padding: 16px 25px;
                 background-color: #3c3c41c4;
                 border: unset;
                 color: white;
                 font-size: 15px;
                 font-style: italic;
                 &:first-child {
-                    margin-right: 20px;
+                    margin-right: 15px;
                 }
             }
             .name, .mail {
                 display: inline-block;
-                width: 39%;
+                width: 250px;
                 margin-bottom: 20px;
             }
             .message {
                 display: block;
-                width: 98%;
+                width: 100%;
                 box-sizing: border-box;
-                padding: 20px 0 95px 20px;
-                margin-bottom: 40px;
+                padding: 14px 20px 98px 20px;
+                margin-bottom: 32px;
             }
             .button {
                 background-color: unset;
                 font-style: unset;
-                margin: 0 auto 60px;
+                margin: 0 auto;
                 display: block;
+                width: 130px;
+                height: 65px;
                 .morph-shape svg {
                     fill: #6633ff;
                 }
@@ -65,6 +68,49 @@
         }
         .social {
             text-align: center;
+            a {
+                margin-right: 14px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                object {
+                    height: 15px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .contact {
+        .wrapper {
+            h2 {
+                margin-bottom: 150px;
+            }
+            form {
+                .name, .mail {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .message {
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contact {
+        margin-bottom: 89px !important;
+        .wrapper {
+            form {
+                .button {
+                    width: 110%;
+                    margin-left: -5%;
+                }
+            }
         }
     }
 }

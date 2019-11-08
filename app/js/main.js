@@ -18,7 +18,7 @@ $(document).ready(function(){
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768,

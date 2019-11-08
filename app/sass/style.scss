@@ -5,6 +5,7 @@
 @import 'slick';
 @import 'work';
 @import 'contact';
+@import 'footer';
 
 html, body {
     height: 100%;
@@ -16,7 +17,7 @@ body {
     box-sizing: border-box;
     font-family: $OpenSans;
     & > * {
-        margin-bottom: 78px;
+        margin-bottom: 64px;
     }
     .wrapper {
         max-width: 940px;
@@ -31,10 +32,11 @@ body {
         margin: 0;
     }
     h2 {
-        font-weight: 400;
+        font-size: 38px;
+        font-weight: 100;
         text-transform: uppercase;
-        letter-spacing: 5px;
-        margin-bottom: 50px;
+        letter-spacing: 6px;
+        margin-bottom: 42px;
         text-align: center;
         &::after {
             content: "";
@@ -42,7 +44,7 @@ body {
             width: 80px;
             display: block;
             margin: 0 auto;
-            padding-bottom: 23px;
+            padding-bottom: 19px;
         }
     }
 }
