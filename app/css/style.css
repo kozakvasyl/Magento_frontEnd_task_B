@@ -36,9 +36,50 @@
         font-size: 16px;
         font-weight: 800; }
         .header .nav ul li a:hover {
-          color: #5a495f; }
-    .header .nav .searsh-block a object {
-      height: 20px; }
+          color: #392d3b; }
+    .header .nav .searsh-block {
+      position: relative;
+      max-width: 275px;
+      margin: 0 auto; }
+      .header .nav .searsh-block > * {
+        display: inline-block;
+        margin-right: 15px; }
+      .header .nav .searsh-block form input {
+        background-color: unset;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding: 3px; }
+        .header .nav .searsh-block form input:focus {
+          outline: none; }
+      .header .nav .searsh-block form .empty {
+        background-image: url("../img/icons/magnifying-glass.svg");
+        background-repeat: no-repeat;
+        background-position: 158px; }
+      .header .nav .searsh-block a {
+        z-index: 1;
+        position: relative; }
+        .header .nav .searsh-block a::before {
+          content: '';
+          border-left: 1px solid #fff;
+          position: absolute;
+          display: block;
+          height: 20px;
+          left: -5px; }
+        .header .nav .searsh-block a object {
+          height: 20px;
+          width: auto;
+          z-index: -1;
+          pointer-events: none; }
+      .header .nav .searsh-block .basket-counter {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #392d3b;
+        padding-top: 3px;
+        font-weight: 800;
+        right: -18px;
+        bottom: 6px; }
 
 .footer {
   background-color: #392d3b;
@@ -47,7 +88,6 @@
   .footer ul {
     margin-bottom: 37px; }
     .footer ul li {
-      cursor: pointer;
       display: inline-block;
       margin: 0 6px; }
       .footer ul li a {

@@ -38,16 +38,63 @@
                     font-size: 16px;
                     font-weight: 800;
                     &:hover {
-                        color: #5a495f;
+                        color: $darkpurple;
                     }
                 }
             }
         }
         .searsh-block {
+            position: relative;
+            max-width: 275px;
+            margin: 0 auto;
+            > * {
+                display: inline-block;
+                margin-right: 15px;
+            }
+            form {
+                input {
+                    background-color: unset;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    padding: 3px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .empty {
+                    background-image: url('../img/icons/magnifying-glass.svg');
+                    background-repeat: no-repeat;
+                    background-position: 158px;
+                }
+            }
             a {
+                z-index: 1;
+                position: relative;
+                &::before {
+                    content: '';
+                    border-left: 1px solid #fff;
+                    position: absolute;
+                    display: block;
+                    height: 20px;
+                    left: -5px;
+                }
                 object {
                     height: 20px;
+                    width: auto;
+                    z-index: -1;
+                    pointer-events: none;
                 }
+            }
+            .basket-counter {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: $darkpurple;
+                padding-top: 3px;
+                font-weight: 800;
+                right: -18px;
+                bottom: 6px;
             }
         }
     }

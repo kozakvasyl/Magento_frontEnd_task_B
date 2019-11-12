@@ -10,6 +10,17 @@ $('.bt-nav').click( function() {
     });
 });
 
+//searsh-block ------------------------
+$('#searsh').on('keyup', function() {
+    var input = $(this);
+    console.log($(this));
+    if(input.val().length === 0) {
+        input.addClass('empty');
+    } else {
+        input.removeClass('empty');
+    }
+});
+
 //slick--------------------------------
 $(document).ready(function(){
   $('.slider').slick({
