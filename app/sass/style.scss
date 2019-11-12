@@ -1,7 +1,9 @@
+@import 'veriables';
 @import 'header';
+@import 'footer';
 
 
-/* RESET browser styles */
+// RESET browser styles--------------
 
 *,
 *:before,
@@ -12,6 +14,20 @@
     margin: 0;
     padding: 0;
     color: #5a5e60;
+}
+//GENERAL----------------------------
+html, body {
+    height: 100%;
+}
+body {
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: $roboto;
+    > * {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    a {
+        text-decoration: none;
+    }
 }
