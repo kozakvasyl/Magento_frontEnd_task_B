@@ -1,16 +1,22 @@
 // nav--------------------------------
-$('.bt-nav').click( function() {
-    $(this).parent().toggleClass( function() {
-        if ( $(this).hasClass('open')) {
-        return 'close';
-        } else 
-        if ( $(this).hasClass('close')) {
-        return 'open';
-      }
+$(document).ready(function() {
+    $(document).delegate('.nav', 'click', function(event){
+        $(this).addClass('oppenned');
+        event.stopPropagation();
+    })
+    $(document).delegate('body', 'click', function(event) {
+        $('.nav').removeClass('oppenned');
+    })
+    $(document).delegate('.cls', 'click', function(event){
+        $('.nav').removeClass('oppenned');
+        event.stopPropagation();
     });
+    $(document).delegate('body', 'click', function(event) {
+        $('.nav-item').removeClass('oppenned');
+    })
 });
 
-//searsh-block ------------------------
+//searsh-block icon hidden------------
 $('#searsh').on('keyup', function() {
     var input = $(this);
     console.log($(this));
