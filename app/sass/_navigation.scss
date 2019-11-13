@@ -1,66 +1,8 @@
-.open {
-    nav, .searsh-block {
-      display: none;
-    }
-  }
-  .close {
-    .searsh-block {
-      display: block;
-    }
-    nav{
-      float: right;
-      margin-top: 38px;
-      padding-right: 130px;
-      transition: all 1s ease;
-      display: block;
-      opacity: 1;
-      ul{
-        list-style: none;
-      li{
-        display: inline;
-      }
-    }
-      a{
-          margin: 0 2px;
-          color: #000;
-          text-decoration: none;
-          text-transform: uppercase;
-       }
-    }
-  }
-  
-.open {
-.nav-icon {
-    .line1{
-    top: 17px;
-    }
-    .line3{
-    top: 27px;   
-    }
-}
-}
-.close {
-.nav-icon {
-    .line{
-    top: 17px;
-    }
-    .line1{
-    transform: rotateZ(45deg);
-    }
-    .line2{
-    opacity: 0;
-    }
-    .line3{
-    transform: rotateZ(-45deg);
-    }
-}
-}
-
 .nav-icon{
     display: block;
     position: absolute;
-    right: 114px;
-    margin-top: 53px;
+    right: 20px;
+    top: 50px;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -71,62 +13,109 @@
         width: 30px;
         margin-left: -15px;
         height: 3px;
-        background: #000;
+        background: #fff;
         transition: all 0.2s ease;
     }
 }
-
- .searsh-block {
-    position: relative;
-    max-width: 275px;
-    margin: 0 auto;
-    > * {
-        display: inline-block;
-        margin-right: 15px;
+.open {
+    .nav-item, .searsh-block {
+      display: none;
     }
-    form {
-        input {
-            background-color: unset;
-            border: none;
-            border-bottom: 1px solid #fff;
-            padding: 3px;
-            &:focus {
-                outline: none;
+    .nav-icon {
+        .line1{
+            top: 17px;
+        }
+        .line3{
+            top: 27px;
+        }
+    }
+}
+.close {
+    .searsh-block {
+        display: block;
+        position: relative;
+        max-width: 275px;
+        margin: 0 auto;
+        > * {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        form {
+            input {
+                background-color: unset;
+                border: none;
+                border-bottom: 1px solid #fff;
+                padding: 3px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .empty {
+                background-image: url('../img/icons/magnifying-glass.svg');
+                background-repeat: no-repeat;
+                background-position: 158px;
             }
         }
-        .empty {
-            background-image: url('../img/icons/magnifying-glass.svg');
-            background-repeat: no-repeat;
-            background-position: 158px;
+        a {
+            z-index: 1;
+            position: relative;
+            &::before {
+                content: '';
+                border-left: 1px solid #fff;
+                position: absolute;
+                display: block;
+                height: 20px;
+                left: -5px;
+            }
+            object {
+                height: 20px;
+                width: auto;
+                z-index: -1;
+                pointer-events: none;
+            }
         }
-    }
-    a {
-        z-index: 1;
-        position: relative;
-        &::before {
-            content: '';
-            border-left: 1px solid #fff;
+        .basket-counter {
             position: absolute;
-            display: block;
-            height: 20px;
-            left: -5px;
-        }
-        object {
-            height: 20px;
-            width: auto;
-            z-index: -1;
-            pointer-events: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: $darkpurple;
+            padding-top: 3px;
+            font-weight: 800;
+            right: -18px;
+            bottom: 6px;
         }
     }
-    .basket-counter {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: $darkpurple;
-        padding-top: 3px;
-        font-weight: 800;
-        right: -18px;
-        bottom: 6px;
+    .nav-item{
+        float: right;
+        margin-top: 38px;
+        padding-right: 130px;
+        transition: all 1s ease;
+        display: block;
+        opacity: 1;
+        list-style: none;
+        li{
+            display: inline;
+        }
+        a{
+            margin: 0 2px;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    .nav-icon {
+        .line{
+            top: 17px;
+        }
+        .line1{
+            transform: rotateZ(45deg);
+        }
+        .line2{
+            opacity: 0;
+        }
+        .line3{
+            transform: rotateZ(-45deg);
+        }
     }
 }

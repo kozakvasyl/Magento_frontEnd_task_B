@@ -24,6 +24,52 @@
     height: auto;
     position: absolute;
     z-index: -1; }
+  .header .header-title {
+    text-align: center;
+    width: 290px;
+    margin: 200px auto;
+    position: relative; }
+    .header .header-title span {
+      display: block; }
+      .header .header-title span:nth-child(1) {
+        font-size: 9px;
+        font-weight: 100;
+        font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 7px; }
+      .header .header-title span:nth-child(2) {
+        font-size: 57px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        padding: 6px 0;
+        border-top: 5px solid #dc5352;
+        border-left: 5px solid #dc5352;
+        border-right: 5px solid #dc5352;
+        position: relative; }
+        .header .header-title span:nth-child(2)::before {
+          content: '';
+          border-bottom: 6px solid #dc5352;
+          display: block;
+          width: 75px;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+        .header .header-title span:nth-child(2)::after {
+          content: '';
+          border-bottom: 6px solid #dc5352;
+          display: block;
+          width: 75px;
+          position: absolute;
+          bottom: 0;
+          left: 0; }
+      .header .header-title span:nth-child(3) {
+        font-size: 17px;
+        letter-spacing: 5px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        margin-left: 6px; }
 
 .footer {
   background-color: #392d3b;
@@ -48,13 +94,81 @@
     font-family: "Roboto", sans-serif;
     padding-bottom: 100px; }
 
-.open nav, .open .searsh-block {
+.nav-icon {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer; }
+  .nav-icon .line {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 30px;
+    margin-left: -15px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.open .nav-item, .open .searsh-block {
   display: none; }
 
-.close .searsh-block {
-  display: block; }
+.open .nav-icon .line1 {
+  top: 17px; }
 
-.close nav {
+.open .nav-icon .line3 {
+  top: 27px; }
+
+.close .searsh-block {
+  display: block;
+  position: relative;
+  max-width: 275px;
+  margin: 0 auto; }
+  .close .searsh-block > * {
+    display: inline-block;
+    margin-right: 15px; }
+  .close .searsh-block form input {
+    background-color: unset;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 3px; }
+    .close .searsh-block form input:focus {
+      outline: none; }
+  .close .searsh-block form .empty {
+    background-image: url("../img/icons/magnifying-glass.svg");
+    background-repeat: no-repeat;
+    background-position: 158px; }
+  .close .searsh-block a {
+    z-index: 1;
+    position: relative; }
+    .close .searsh-block a::before {
+      content: '';
+      border-left: 1px solid #fff;
+      position: absolute;
+      display: block;
+      height: 20px;
+      left: -5px; }
+    .close .searsh-block a object {
+      height: 20px;
+      width: auto;
+      z-index: -1;
+      pointer-events: none; }
+  .close .searsh-block .basket-counter {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #392d3b;
+    padding-top: 3px;
+    font-weight: 800;
+    right: -18px;
+    bottom: 6px; }
+
+.close .nav-item {
   float: right;
   margin-top: 38px;
   padding-right: 130px;
@@ -62,22 +176,15 @@
   -o-transition: all 1s ease;
   transition: all 1s ease;
   display: block;
-  opacity: 1; }
-  .close nav ul {
-    list-style: none; }
-    .close nav ul li {
-      display: inline; }
-  .close nav a {
+  opacity: 1;
+  list-style: none; }
+  .close .nav-item li {
+    display: inline; }
+  .close .nav-item a {
     margin: 0 2px;
     color: #000;
     text-decoration: none;
     text-transform: uppercase; }
-
-.open .nav-icon .line1 {
-  top: 17px; }
-
-.open .nav-icon .line3 {
-  top: 27px; }
 
 .close .nav-icon .line {
   top: 17px; }
@@ -94,70 +201,6 @@
   -webkit-transform: rotateZ(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotateZ(-45deg); }
-
-.nav-icon {
-  display: block;
-  position: absolute;
-  right: 114px;
-  margin-top: 53px;
-  width: 36px;
-  height: 36px;
-  cursor: pointer; }
-  .nav-icon .line {
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    width: 30px;
-    margin-left: -15px;
-    height: 3px;
-    background: #000;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-
-.searsh-block {
-  position: relative;
-  max-width: 275px;
-  margin: 0 auto; }
-  .searsh-block > * {
-    display: inline-block;
-    margin-right: 15px; }
-  .searsh-block form input {
-    background-color: unset;
-    border: none;
-    border-bottom: 1px solid #fff;
-    padding: 3px; }
-    .searsh-block form input:focus {
-      outline: none; }
-  .searsh-block form .empty {
-    background-image: url("../img/icons/magnifying-glass.svg");
-    background-repeat: no-repeat;
-    background-position: 158px; }
-  .searsh-block a {
-    z-index: 1;
-    position: relative; }
-    .searsh-block a::before {
-      content: '';
-      border-left: 1px solid #fff;
-      position: absolute;
-      display: block;
-      height: 20px;
-      left: -5px; }
-    .searsh-block a object {
-      height: 20px;
-      width: auto;
-      z-index: -1;
-      pointer-events: none; }
-  .searsh-block .basket-counter {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #392d3b;
-    padding-top: 3px;
-    font-weight: 800;
-    right: -18px;
-    bottom: 6px; }
 
 *,
 *:before,
