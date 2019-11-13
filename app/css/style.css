@@ -48,164 +48,116 @@
     font-family: "Roboto", sans-serif;
     padding-bottom: 100px; }
 
-.nav {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+.open nav, .open .searsh-block {
+  display: none; }
+
+.close .searsh-block {
+  display: block; }
+
+.close nav {
+  float: right;
+  margin-top: 38px;
+  padding-right: 130px;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   display: block;
-  cursor: pointer; }
-  .nav span {
-    display: block;
-    position: absolute;
-    float: left;
-    clear: both;
-    height: 4px;
-    width: 40px;
-    background-color: #fff;
-    right: 3px;
-    top: 3px;
-    overflow: hidden;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
-    .nav span:nth-child(1) {
-      margin-top: 10px;
-      z-index: 9; }
-    .nav span:nth-child(2) {
-      margin-top: 25px; }
-    .nav span:nth-child(3) {
-      margin-top: 40px; }
+  opacity: 1; }
+  .close nav ul {
+    list-style: none; }
+    .close nav ul li {
+      display: inline; }
+  .close nav a {
+    margin: 0 2px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase; }
 
-.nav-item {
-  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  -o-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  height: 0;
-  width: 0;
-  right: 0;
-  top: 0;
-  position: absolute;
-  background-color: #dc5352;
-  z-index: 18;
-  overflow: hidden; }
-  .nav-item li {
-    display: block;
-    float: right;
-    clear: both;
-    height: auto;
-    margin-right: -160px;
-    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-    .nav-item li:first-child {
-      margin-top: 180px; }
-    .nav-item li:nth-child(1) {
-      -webkit-transition-delay: 0.05s;
-           -o-transition-delay: 0.05s;
-              transition-delay: 0.05s; }
-    .nav-item li:nth-child(2) {
-      -webkit-transition-delay: 0.10s;
-           -o-transition-delay: 0.10s;
-              transition-delay: 0.10s; }
-    .nav-item li:nth-child(3) {
-      -webkit-transition-delay: 0.15s;
-           -o-transition-delay: 0.15s;
-              transition-delay: 0.15s; }
-    .nav-item li:nth-child(4) {
-      -webkit-transition-delay: 0.20s;
-           -o-transition-delay: 0.20s;
-              transition-delay: 0.20s; }
-    .nav-item li:nth-child(5) {
-      -webkit-transition-delay: 0.25s;
-           -o-transition-delay: 0.25s;
-              transition-delay: 0.25s; }
-    .nav-item li a {
-      color: #fff;
-      font-size: 16px;
-      width: 100%;
-      display: block;
-      line-height: 40px;
-      text-decoration: none;
-      text-transform: uppercase; }
+.open .nav-icon .line1 {
+  top: 17px; }
 
-.oppenned .nav-item {
-  opacity: 1;
-  height: 100%;
-  width: 100%; }
+.open .nav-icon .line3 {
+  top: 27px; }
 
-.oppenned span:nth-child(2) {
-  overflow: visible; }
+.close .nav-icon .line {
+  top: 17px; }
 
-.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
-  z-index: 100;
-  -webkit-transform: rotate(45deg);
+.close .nav-icon .line1 {
+  -webkit-transform: rotateZ(45deg);
       -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
+          transform: rotateZ(45deg); }
 
-.oppenned span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translateY(12px) translateX(12px);
-      -ms-transform: rotate(45deg) translateY(12px) translateX(12px);
-          transform: rotate(45deg) translateY(12px) translateX(12px); }
+.close .nav-icon .line2 {
+  opacity: 0; }
 
-.oppenned span:nth-child(2) {
-  height: 430px;
-  width: 700px;
-  right: -160px;
-  top: -160px;
-  background-color: #dc5352; }
-  .oppenned span:nth-child(2) .searsh-block {
-    position: relative;
-    max-width: 275px;
-    margin: 0 auto; }
-    .oppenned span:nth-child(2) .searsh-block > * {
-      display: inline-block;
-      margin-right: 15px; }
-    .oppenned span:nth-child(2) .searsh-block form input {
-      background-color: unset;
-      border: none;
-      border-bottom: 1px solid #fff;
-      padding: 3px; }
-      .oppenned span:nth-child(2) .searsh-block form input:focus {
-        outline: none; }
-    .oppenned span:nth-child(2) .searsh-block form .empty {
-      background-image: url("../img/icons/magnifying-glass.svg");
-      background-repeat: no-repeat;
-      background-position: 158px; }
-    .oppenned span:nth-child(2) .searsh-block a {
-      z-index: 1;
-      position: relative; }
-      .oppenned span:nth-child(2) .searsh-block a::before {
-        content: '';
-        border-left: 1px solid #fff;
-        position: absolute;
-        display: block;
-        height: 20px;
-        left: -5px; }
-      .oppenned span:nth-child(2) .searsh-block a object {
-        height: 20px;
-        width: auto;
-        z-index: -1;
-        pointer-events: none; }
-    .oppenned span:nth-child(2) .searsh-block .basket-counter {
+.close .nav-icon .line3 {
+  -webkit-transform: rotateZ(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotateZ(-45deg); }
+
+.nav-icon {
+  display: block;
+  position: absolute;
+  right: 114px;
+  margin-top: 53px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer; }
+  .nav-icon .line {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 30px;
+    margin-left: -15px;
+    height: 3px;
+    background: #000;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.searsh-block {
+  position: relative;
+  max-width: 275px;
+  margin: 0 auto; }
+  .searsh-block > * {
+    display: inline-block;
+    margin-right: 15px; }
+  .searsh-block form input {
+    background-color: unset;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 3px; }
+    .searsh-block form input:focus {
+      outline: none; }
+  .searsh-block form .empty {
+    background-image: url("../img/icons/magnifying-glass.svg");
+    background-repeat: no-repeat;
+    background-position: 158px; }
+  .searsh-block a {
+    z-index: 1;
+    position: relative; }
+    .searsh-block a::before {
+      content: '';
+      border-left: 1px solid #fff;
       position: absolute;
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background-color: #392d3b;
-      padding-top: 3px;
-      font-weight: 800;
-      right: -18px;
-      bottom: 6px; }
-
-.oppenned span:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
-      -ms-transform: rotate(-45deg) translateY(-10px) translateX(10px);
-          transform: rotate(-45deg) translateY(-10px) translateX(10px); }
-
-.oppenned li {
-  margin-right: 168px; }
+      display: block;
+      height: 20px;
+      left: -5px; }
+    .searsh-block a object {
+      height: 20px;
+      width: auto;
+      z-index: -1;
+      pointer-events: none; }
+  .searsh-block .basket-counter {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #392d3b;
+    padding-top: 3px;
+    font-weight: 800;
+    right: -18px;
+    bottom: 6px; }
 
 *,
 *:before,

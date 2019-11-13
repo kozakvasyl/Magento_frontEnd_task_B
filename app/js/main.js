@@ -1,19 +1,13 @@
 // nav--------------------------------
-$(document).ready(function() {
-    $(document).delegate('.nav', 'click', function(event){
-        $(this).addClass('oppenned');
-        event.stopPropagation();
-    })
-    $(document).delegate('body', 'click', function(event) {
-        $('.nav').removeClass('oppenned');
-    })
-    $(document).delegate('.cls', 'click', function(event){
-        $('.nav').removeClass('oppenned');
-        event.stopPropagation();
+$('.nav-icon').click( function() {
+    $(this).parent().toggleClass( function() {
+        if ( $(this).hasClass('open') ) {
+            return 'close';
+        } else 
+        if ( $(this).hasClass('close') ) {
+            return 'open';
+        }
     });
-    $(document).delegate('body', 'click', function(event) {
-        $('.nav-item').removeClass('oppenned');
-    })
 });
 
 //searsh-block icon hidden------------
