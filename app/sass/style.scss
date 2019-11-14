@@ -5,6 +5,7 @@
 @import 'galery-first';
 @import 'galery-second';
 @import 'galery-third';
+@import 'deals';
 
 // RESET browser styles--------------
 *,
@@ -34,7 +35,13 @@ body {
         text-decoration: none;
     }
 }
-//from all the same elements-------------------
+
+.deals, .block-products, .delivery-payment {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 109px;
+}
+//galery block-content styles-------------------
 .block-content {
     position: absolute;
     top: 40px;
