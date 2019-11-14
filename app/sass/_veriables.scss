@@ -10,8 +10,9 @@ $roboto: 'Roboto', sans-serif;
     src: url(../fonts/Myriad_Pro_Regular.ttf);
 }
 $myriad: 'Myriad Pro', Arial, Helvetica, sans-serif;
-// mixins-------------------------
-@mixin img-full-screen {
+
+// MIXINS-------------------------
+@mixin img-full-screen { 
     min-height: 100%;
     min-width: 100%;
     width: auto;
@@ -19,7 +20,7 @@ $myriad: 'Myriad Pro', Arial, Helvetica, sans-serif;
     position: absolute;
 }
 
-@mixin img-full-screen-center {
+@mixin img-full-screen-center { //img full center
     min-width:100%;
     min-height:100%;
     height:auto;
@@ -29,17 +30,38 @@ $myriad: 'Myriad Pro', Arial, Helvetica, sans-serif;
     transform:translateY(-50%) translateX(-50%);
 }
 
-@mixin vertical-centered {
+@mixin vertical-centered { //vertical centered element
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -106%);
 }
-@mixin overlay($color) {
+@mixin overlay($color) { //overlay
     content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     background-color: $color;
+    z-index: 1;
 }
+@mixin img-container($height) {
+    width: 100%;
+    height: $height;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin button-link($color, $hover-color) { //button
+    color: $color;
+    padding: 12px;
+    border: 2px solid $color;
+    font-weight: 900;
+    font-size: 16px;
+    transition: all 1s ease;
+    &:hover {
+        color: $hover-color;
+        border-color: $hover-color;
+    }
+}
+

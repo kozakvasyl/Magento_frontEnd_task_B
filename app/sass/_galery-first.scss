@@ -1,18 +1,10 @@
 .galery-first {
     .product-tshort, .product-clearance {
         position: relative;
-        /* &::before {
-            @include overlay(#ffffff83);
-        } */
         .img-container {
-            width: 100%;
-            height: 293px;
-            position: relative;
-            overflow: hidden;
+            @include img-container(293px);
             img {
                 @include img-full-screen-center;
-                align-self: center;
-                transition: all 1s ease-out;
             }
         }
         .description {
@@ -47,7 +39,7 @@
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1024px){
     .galery-first {
         .product-tshort, .product-clearance {
             .img-container, .description {
