@@ -7,6 +7,7 @@
 @import 'galery-third';
 @import 'deals';
 @import 'block-products';
+@import 'delivery-payment';
 
 // RESET browser styles--------------
 *,
@@ -40,7 +41,6 @@ body {
 .deals, .block-products, .delivery-payment {
     max-width: 1110px;
     margin: 0 auto;
-    margin-bottom: 109px;
 }
 //galery block-content styles-------------------
 .block-content {
@@ -66,5 +66,11 @@ body {
     }
     .button-link {
         @include button-link(#fff, $darkpurple2);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .deals, .block-products, .delivery-payment {
+        margin-bottom: 100px;
     }
 }

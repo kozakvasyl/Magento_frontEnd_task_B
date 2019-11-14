@@ -1,0 +1,112 @@
+.delivery-payment {
+    > * {
+        width: 100%;
+        height: 377px;
+        padding: 40px;
+        h2 {
+            font-weight: 100;
+            font-size: 32px;
+            margin-bottom: 15px;
+            span {
+                display: inline-block;
+                font-weight: 900;
+                color: #fff;
+            }
+        }
+        .descrition {
+            font-size: 16px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        > * {
+            color: #fff;
+            span {
+                display: block;
+            }
+        }
+    }
+    .delivery {
+        background-color: #46a3bf;
+        .text-delivery {
+            position: relative;
+            > * {
+                float: left;
+            }
+            p {
+                color: #fff;
+                font-size: 12px;
+                font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+                text-transform: none;
+                width: 45%;
+                margin: 0 10px 25px 0;
+                a {
+                    color: #fff;
+                    text-decoration: underline;
+                    transition: all 1s ease-out;
+                    &:hover {
+                        color: $darkpurple;
+                    }
+                }
+            }
+            img {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .payment {
+        background-color: $darkred;
+        text-align: center;
+        h2 {
+            span {
+                display: block;;
+            }
+        }
+        img {
+            display: block;
+            margin:  0 auto;
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .delivery-payment {
+        .delivery {
+            margin-right: 45px;
+            .text-delivery {
+                p {
+                    width: 50%;
+                }
+                img {
+                    float: right;
+                }
+            }
+        }
+        > * {
+            width: 47%;
+            float: left;
+            h2 {
+                font-size: 40px;
+                line-height: 49px;
+            }
+            .descrition {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .delivery-payment {
+        .delivery {
+            margin-right: 33px;
+        }
+        > * {
+            width: 48%;
+        }
+        .descrition {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+    }
+}

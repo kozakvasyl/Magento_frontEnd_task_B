@@ -402,6 +402,9 @@
     .galery-third > *:last-child {
       width: 40%; } }
 
+body .deals {
+  margin-bottom: 80px; }
+
 .deals {
   overflow: visible; }
   .deals h2, .deals h2 span {
@@ -494,8 +497,6 @@
   text-align: center;
   margin-bottom: 35px;
   width: 100%; }
-  .block-products .block-item:last-child {
-    margin-bottom: 0; }
   .block-products .block-item > * {
     margin-bottom: 35px;
     display: block;
@@ -535,12 +536,100 @@
       border-color: #dc5352; }
 
 @media screen and (min-width: 768px) {
+  .block-products {
+    margin-bottom: 100px; }
+    .block-products .block-item {
+      width: 30%;
+      margin-right: 30px;
+      float: left; }
+      .block-products .block-item:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 1200px) {
   .block-products .block-item {
-    width: 30%;
-    margin-right: 30px;
+    width: 31%;
+    margin-right: 34px; } }
+
+.delivery-payment > * {
+  width: 100%;
+  height: 377px;
+  padding: 40px; }
+  .delivery-payment > * h2 {
+    font-weight: 100;
+    font-size: 32px;
+    margin-bottom: 15px; }
+    .delivery-payment > * h2 span {
+      display: inline-block;
+      font-weight: 900;
+      color: #fff; }
+  .delivery-payment > * .descrition {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: block; }
+  .delivery-payment > * > * {
+    color: #fff; }
+    .delivery-payment > * > * span {
+      display: block; }
+
+.delivery-payment .delivery {
+  background-color: #46a3bf; }
+  .delivery-payment .delivery .text-delivery {
+    position: relative; }
+    .delivery-payment .delivery .text-delivery > * {
+      float: left; }
+    .delivery-payment .delivery .text-delivery p {
+      color: #fff;
+      font-size: 12px;
+      font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+      text-transform: none;
+      width: 45%;
+      margin: 0 10px 25px 0; }
+      .delivery-payment .delivery .text-delivery p a {
+        color: #fff;
+        text-decoration: underline;
+        -webkit-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out; }
+        .delivery-payment .delivery .text-delivery p a:hover {
+          color: #392d3b; }
+    .delivery-payment .delivery .text-delivery img {
+      position: absolute;
+      right: 0; }
+
+.delivery-payment .payment {
+  background-color: #dc5352;
+  text-align: center; }
+  .delivery-payment .payment h2 span {
+    display: block; }
+  .delivery-payment .payment img {
+    display: block;
+    margin: 0 auto; }
+
+@media screen and (min-width: 768px) {
+  .delivery-payment .delivery {
+    margin-right: 45px; }
+    .delivery-payment .delivery .text-delivery p {
+      width: 50%; }
+    .delivery-payment .delivery .text-delivery img {
+      float: right; }
+  .delivery-payment > * {
+    width: 47%;
     float: left; }
-    .block-products .block-item:last-child {
-      margin-right: 0; } }
+    .delivery-payment > * h2 {
+      font-size: 40px;
+      line-height: 49px; }
+    .delivery-payment > * .descrition {
+      font-size: 25px;
+      margin-bottom: 30px; } }
+
+@media screen and (min-width: 1200px) {
+  .delivery-payment .delivery {
+    margin-right: 33px; }
+  .delivery-payment > * {
+    width: 48%; }
+  .delivery-payment .descrition {
+    font-size: 32px;
+    margin-bottom: 25px; } }
 
 *,
 *:before,
@@ -567,8 +656,7 @@ body {
 
 .deals, .block-products, .delivery-payment {
   max-width: 1110px;
-  margin: 0 auto;
-  margin-bottom: 109px; }
+  margin: 0 auto; }
 
 .block-content {
   position: absolute;
@@ -598,5 +686,9 @@ body {
     .block-content .button-link:hover {
       color: #5a495f;
       border-color: #5a495f; }
+
+@media screen and (min-width: 768px) {
+  .deals, .block-products, .delivery-payment {
+    margin-bottom: 100px; } }
 
 /*# sourceMappingURL=maps/style.css.map */
