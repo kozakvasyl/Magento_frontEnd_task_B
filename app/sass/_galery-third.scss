@@ -1,0 +1,88 @@
+.galery-third {
+    margin-bottom: 75px;
+    > * {
+        @include img-container(587px);
+    }
+    .product-suits {
+        img {
+            @include img-full-screen-center;
+        }
+        &::before {
+            @include overlay(#dc5252d2);
+        }
+        .block-content {
+            right: 40px;
+            text-align: right;
+        }
+    }
+    .product-tops {
+        img {
+            @include img-full-screen;
+            right: 0;
+        }
+        .block-content {
+            right: 110px;
+            text-align: right;
+            span {
+                color: $darkpurple;
+                &:first-child {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+            .button-arrow {
+                color: $darkpurple;
+                position: relative;
+                font-weight: 900;
+                transition: all 1s ease-out;
+                &:hover {
+                    color: $darkred;
+                }
+                .arrow {
+                    position: absolute;
+                    width: 164px;
+                    height: 15px;
+                    border-bottom: 2px solid #404041;
+                    right: -60px;
+                    transition: all 1s ease-out;
+                    &:hover {
+                        border-color: $darkred;
+                        transform: translateX(9%);
+                    }
+                    i {
+                        border: solid #404041;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 3px;
+                        position: absolute;
+                        right: 0;
+                        bottom: -4px;
+                        &:hover {
+                            border: solid #dc5352;
+                        }
+                    }
+                    .right {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .galery-third {
+        & > * {
+            display: inline-block;
+            float: left;
+            &:first-child {
+                display: inline-block;
+                width: 60%;
+            }
+            &:last-child {
+                width: 40%;
+            }
+        }
+    }
+}

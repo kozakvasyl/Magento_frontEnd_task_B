@@ -58,7 +58,7 @@ $myriad: 'Myriad Pro', Arial, Helvetica, sans-serif;
     border: 2px solid $color;
     font-weight: 900;
     font-size: 16px;
-    transition: all 1s ease;
+    transition: all 1s ease-out;
     &:hover {
         color: $hover-color;
         border-color: $hover-color;
