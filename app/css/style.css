@@ -159,7 +159,7 @@
 
 .close {
   background-color: #dc5352;
-  position: absolute;
+  position: fixed;
   right: 0px;
   height: 100%;
   width: 100%;
@@ -241,6 +241,36 @@
     -webkit-transform: rotateZ(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotateZ(-45deg); }
+
+@media screen and (min-width: 768px) {
+  .close {
+    height: auto;
+    padding: 54px; }
+    .close .nav-item {
+      text-align: center;
+      display: block;
+      margin-bottom: 20px; }
+      .close .nav-item li {
+        display: inline-block;
+        margin: 0 20px 0 0; }
+    .close .searsh-block {
+      margin: 0 auto;
+      display: block; } }
+
+@media screen and (min-width: 992px) {
+  .close {
+    height: auto;
+    padding: 54px; }
+    .close .nav-item {
+      text-align: unset;
+      margin: 0 0 0 20px;
+      display: inline-block; }
+      .close .nav-item li {
+        display: inline-block;
+        margin: 0 20px 0 0; }
+    .close .searsh-block {
+      margin-right: 100px;
+      float: right; } }
 
 .galery-first .product-tshort, .galery-first .product-clearance {
   position: relative; }

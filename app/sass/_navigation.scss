@@ -33,7 +33,7 @@
 }
 .close {
     background-color: $darkred;
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 100%;
     width: 100%;
@@ -128,6 +128,44 @@
         }
         .line3{
             transform: rotateZ(-45deg);
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .close {
+        height: auto;
+        padding: 54px;
+        .nav-item{
+            text-align: center;
+            display: block;
+            margin-bottom: 20px;
+            li {
+                display: inline-block;
+                margin: 0 20px 0 0;
+            }
+        }
+        .searsh-block {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .close {
+        height: auto;
+        padding: 54px;
+        .nav-item{
+            text-align: unset;
+            margin: 0 0 0 20px;
+            display: inline-block;
+            li {
+                display: inline-block;
+                margin: 0 20px 0 0;
+            }
+        }
+        .searsh-block {
+            margin-right: 100px;
+            float: right;
         }
     }
 }
