@@ -22,7 +22,7 @@
     height: auto;
     position: absolute;
     z-index: -1; }
-  .header .header-title {
+  .header a .header-title {
     text-align: center;
     width: 290px;
     position: absolute;
@@ -31,40 +31,40 @@
     -webkit-transform: translate(-50%, -106%);
         -ms-transform: translate(-50%, -106%);
             transform: translate(-50%, -106%); }
-    .header .header-title span {
+    .header a .header-title span {
       display: block; }
-      .header .header-title span:nth-child(1) {
+      .header a .header-title span:nth-child(1) {
         font-size: 9px;
         font-weight: 100;
         font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
         letter-spacing: 3px;
         margin-bottom: 7px; }
-      .header .header-title span:nth-child(2) {
+      .header a .header-title span:nth-child(2) {
         font-size: 57px;
         font-weight: 900;
         letter-spacing: 3px;
-        padding: 6px 0;
+        padding: 6px 0 12px 0;
         border-top: 5px solid #dc5352;
         border-left: 5px solid #dc5352;
         border-right: 5px solid #dc5352;
         position: relative; }
-        .header .header-title span:nth-child(2)::before {
+        .header a .header-title span:nth-child(2)::before {
           content: '';
           border-bottom: 6px solid #dc5352;
           display: block;
           width: 75px;
           position: absolute;
           bottom: 0;
-          right: 0; }
-        .header .header-title span:nth-child(2)::after {
+          right: -1px; }
+        .header a .header-title span:nth-child(2)::after {
           content: '';
           border-bottom: 6px solid #dc5352;
           display: block;
           width: 75px;
           position: absolute;
           bottom: 0;
-          left: 0; }
-      .header .header-title span:nth-child(3) {
+          left: -1px; }
+      .header a .header-title span:nth-child(3) {
         font-size: 17px;
         letter-spacing: 5px;
         position: absolute;
@@ -72,6 +72,33 @@
         right: 0;
         bottom: -8px;
         margin-left: 6px; }
+
+@media screen and (min-width: 768px) {
+  .header a .header-title {
+    width: 596px; }
+    .header a .header-title span {
+      display: block; }
+      .header a .header-title span:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 12px; }
+      .header a .header-title span:nth-child(2) {
+        font-size: 109px;
+        padding: 6px 0 15px 0;
+        border-top: 9px solid #dc5352;
+        border-left: 9px solid #dc5352;
+        border-right: 9px solid #dc5352; }
+        .header a .header-title span:nth-child(2)::before {
+          content: '';
+          border-bottom: 9px solid #dc5352;
+          width: 170px; }
+        .header a .header-title span:nth-child(2)::after {
+          content: '';
+          border-bottom: 9px solid #dc5352;
+          width: 170px; }
+      .header a .header-title span:nth-child(3) {
+        font-size: 39px;
+        bottom: -20px;
+        margin-left: 6px; } }
 
 .footer {
   background-color: #392d3b;
@@ -366,14 +393,13 @@
       .galery-third .product-tops .block-content .button-arrow .arrow {
         position: absolute;
         width: 164px;
-        height: 15px;
         border-bottom: 2px solid #404041;
         right: -60px;
+        bottom: -5px;
         -webkit-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;
         transition: all 1s ease-out; }
         .galery-third .product-tops .block-content .button-arrow .arrow:hover {
-          border-color: #dc5352;
           -webkit-transform: translateX(9%);
               -ms-transform: translateX(9%);
                   transform: translateX(9%); }
@@ -384,17 +410,16 @@
           padding: 3px;
           position: absolute;
           right: 0;
-          bottom: -4px; }
-          .galery-third .product-tops .block-content .button-arrow .arrow i:hover {
-            border: solid #dc5352; }
-        .galery-third .product-tops .block-content .button-arrow .arrow .right {
+          bottom: -4px;
           -webkit-transform: rotate(-45deg);
               -ms-transform: rotate(-45deg);
                   transform: rotate(-45deg); }
+          .galery-third .product-tops .block-content .button-arrow .arrow i:hover {
+            border: solid #dc5352; }
 
 @media screen and (min-width: 768px) {
   .galery-third > * {
-    display: inline-block;
+    display: block;
     float: left; }
     .galery-third > *:first-child {
       display: inline-block;
