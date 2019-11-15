@@ -15,7 +15,7 @@
         margin-left: -15px;
         height: 3px;
         background: $darkred;
-        transition: all 0.2s ease;
+        transition: all 0.8s ease;
     }
 }
 .open {
@@ -39,6 +39,8 @@
     width: 100%;
     z-index: 2;
     padding-top: 100px;
+    top: 0;
+    transition: top 0.3s;
     .searsh-block {
         display: block;
         position: relative;
@@ -117,7 +119,7 @@
     }
     .nav-icon {
         .line{
-            background-color: #fff;
+            background-color: $darkpurple;
             top: 17px;
         }
         .line1{

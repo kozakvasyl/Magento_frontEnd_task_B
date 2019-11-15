@@ -9,6 +9,17 @@ $('.nav-icon').click( function() {
         }
     });
 });
+// nav nover ---------------------------
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("close").style.top = "0";
+  } else {
+    document.getElementById("close").style.top = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 //searsh-block icon hidden------------
 $('#searsh').on('keyup', function() {
@@ -20,6 +31,18 @@ $('#searsh').on('keyup', function() {
         input.removeClass('empty');
     }
 });
+
+//scroll-------------------------------
+
+$(function(){
+
+    $('a[data-target^="anchor"]').bind('click.smoothscroll', function(){
+     var target = $(this).attr('href'),
+      bl_top = $(target).offset().top;
+     $('body, html').animate({scrollTop:bl_top}, 1000);
+     return false;
+    })
+   });
 
 //slick deals--------------------------------
 $(document).ready(function(){

@@ -144,9 +144,9 @@
     margin-left: -15px;
     height: 3px;
     background: #dc5352;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease; }
 
 .open .nav-item, .open .searsh-block {
   display: none; }
@@ -164,7 +164,11 @@
   height: 100%;
   width: 100%;
   z-index: 2;
-  padding-top: 100px; }
+  padding-top: 100px;
+  top: 0;
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s; }
   .close .searsh-block {
     display: block;
     position: relative;
@@ -229,7 +233,7 @@
       .close .nav-item a:hover {
         color: #392d3b; }
   .close .nav-icon .line {
-    background-color: #fff;
+    background-color: #392d3b;
     top: 17px; }
   .close .nav-icon .line1 {
     -webkit-transform: rotateZ(45deg);

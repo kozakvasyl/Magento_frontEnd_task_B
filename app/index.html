@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <img src="img/title_img.jpg" alt="">
         <div class="overlay"></div>
-        <div class="nav open">
+        <div class="nav open" id="close">
             <div class="nav-icon">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
             </div>
             <ul class="nav-item">
-                <li><a href="">home</a></li>
-                <li><a href="">women</a></li>
-                <li><a href="">men</a></li>
-                <li><a href="">lingerie</a></li>
-                <li><a href="">boys</a></li>
-                <li><a href="">shoes</a></li>
+                <li><a data-target="anchor" href="#home">home</a></li>
+                <li><a data-target="anchor" href="#women">women</a></li>
+                <li><a data-target="anchor" href="#men">men</a></li>
+                <li><a data-target="anchor" href="#lingerie">lingerie</a></li>
+                <li><a data-target="anchor" href="#boys">boys</a></li>
+                <li><a data-target="anchor" href="#shoes">shoes</a></li>
             </ul>
             <div class="searsh-block">
                 <form action="">
@@ -47,7 +47,7 @@
             </h1>
         </a>
     </header>
-    <section class="galery-first">
+    <section class="galery-first" id="women">
         <div class="product-tshort">
             <div class="img-container">
                 <img src="img/galery/product1.jpg" alt="">
@@ -104,7 +104,7 @@
             </div>
         </div>
     </section>
-    <section class="deals">
+    <section class="deals" id="men">
         <h2>popular online <span>deals</span></h2>
         <div class="slider">
             <div class="item">
@@ -149,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="block-products">
+    <section class="block-products" id="lingerie">
         <div class="block-item">
             <div class="img-container">
                 <img src="img/block-product1.jpg" alt="">
@@ -175,7 +175,7 @@
             <a href="" class="button">shop sunglasses</a>
         </div>
     </section>
-    <section class="delivery-payment">
+    <section class="delivery-payment" id="boys">
         <div class="delivery">
             <h2>free next<br>day <span>delivery</span></h2>
             <span class="descrition">order before 3pm</span>
@@ -190,7 +190,7 @@
             <img src="img/payment.png" alt="">
         </div>
     </section>
-    <section class="join">
+    <section class="join" id="shoes">
         <img class="background" src="img/foter-image.jpg" alt="">
         <h2>mailing list</h2>
         <span>join our mailing list and get the latest deals to your inbox</span>
