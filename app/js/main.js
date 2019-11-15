@@ -21,7 +21,7 @@ $('#searsh').on('keyup', function() {
     }
 });
 
-//slick--------------------------------
+//slick deals--------------------------------
 $(document).ready(function(){
   $('.slider').slick({
     dots: false,
@@ -56,3 +56,16 @@ $(document).ready(function(){
     ]
   });
 });
+//slick brands -----------------------------------------
+$(document).ready(function(){
+    $('.join-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      variableWidth: true,
+      slidesToShow: 9,
+      slidesToScroll: 1,
+      autoplay: true
+    });
+  });
